@@ -71,33 +71,43 @@
 /* NEW CSS */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 * {
-    --default-background: #0b1017;
+    --default-background: #141b25;
     --default-text: #e1e6ed;
-    --default-accent: #3274d1;
+    --default-accent: #3f81df;
+    --default-link: #6099e9;
 
     background-color: var(--default-background);
     color: var(--default-text);
     font-family: "Open Sans", sans-serif;
     margin: 4%;
+    justify-content: center;
+}
 
+strong,
+span,
+a,
+i {
+    margin: 0;
 }
 
 /* Tooltip container */
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    border-bottom: 1px dotted var(--default-text); /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
-    background-color: black;
+    width: 200px;
+    background-color: #222830ef;
+    backdrop-filter: blur(6px);
     color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
+    text-align: left;
+    padding: 15px;
+    border: 0.5px solid grey;
+    border-radius: 5px;
 
     /* Position the tooltip text - see examples below! */
     position: absolute;
@@ -107,4 +117,50 @@
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+h1,
+h2,
+a {
+    color: var(--default-accent);
+    background-color: transparent;
+}
+
+#doctorpic {
+    background-image: 'assets/chinaflag.png';
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    height: 300px;
+}
+
+.subheading-container {
+    position: relative;
+}
+
+/*.subheading-box {
+    padding: 20px;
+    background-color: #242424a9;
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}*/
+
+.subheading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: #242424cc;
+    text-align: center;
+    width: 75%;
+}
+
+.quiz {
+    object-fit: cover;
 }
