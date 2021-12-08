@@ -1,0 +1,166 @@
+/*.background {
+    background: scroll;
+}
+
+.header {
+    color: #2715F8;
+    position: absolute;
+    font-family: Times New Roman, Times, serif;
+    font-size: 40px;
+}
+
+.headerpic {
+    opacity: 0.3;
+    position: absolute;
+    width: auto;
+    height: auto;
+}
+
+.headerlocationsdiv {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.mainpage {
+    position: absolute;
+    top: 100px;
+    left: 25px;
+}
+
+.mainpagebackground {
+    background-color: lightblue;
+}
+
+.contentsection {
+    position: absolute;
+    top: 100px;
+}
+
+.tab {
+    margin-left: 40px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    width: 120px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    visibility: hidden;
+    width: 160px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}*/
+
+/* NEW CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    --default-background: #141b25;
+    --default-text: #e1e6ed;
+    --default-accent: #3f81df;
+    --default-link: #6099e9;
+
+    background-color: var(--default-background);
+    color: var(--default-text);
+    font-family: "Open Sans", sans-serif;
+    margin: 4%;
+    justify-content: center;
+}
+
+strong,
+span,
+a,
+i {
+    margin: 0;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted var(--default-text); /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #222830ef;
+    backdrop-filter: blur(6px);
+    color: #fff;
+    text-align: left;
+    padding: 15px;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+h1,
+h2,
+a {
+    color: var(--default-accent);
+    background-color: transparent;
+}
+
+#doctorpic {
+    background-image: 'assets/chinaflag.png';
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    height: 300px;
+}
+
+.subheading-container {
+    position: relative;
+}
+
+/*.subheading-box {
+    padding: 20px;
+    background-color: #242424a9;
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}*/
+
+.subheading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: #242424cc;
+    text-align: center;
+    width: 75%;
+}
+
+.quiz {
+    object-fit: cover;  
+}
